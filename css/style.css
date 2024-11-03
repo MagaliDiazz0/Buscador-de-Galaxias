@@ -1,0 +1,27 @@
+main {
+    min-height: calc(100vh - 160px);
+  }
+
+.card-text {
+    max-height: 100px; /* Limita la altura del texto de la descripción */
+    overflow-y: auto;  /* Activa la barra de desplazamiento solo en la descripción */
+}
+
+.card {
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column; /* Hace que el contenido de la tarjeta esté alineado en columna */
+}
+
+.card-body .text-muted {
+    margin-top: auto; /* Alinea la fecha en la parte inferior */
+}
+
+.card-img-top {
+  width: 100%;       /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+  height: 200px;     /* Asigna una altura fija para todas las imágenes */
+  object-fit: cover; /* Hace que las imágenes se recorten de forma proporcionada */
+}
